@@ -86,3 +86,7 @@ body > section .About {
     margin-top: 20px;
   }
 }
+
+section.contact-me {
+  margin-top: 150px;
+}
