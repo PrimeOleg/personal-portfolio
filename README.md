@@ -18,3 +18,6 @@ This is my first attempt at building a personal portfolio website. It showcases 
 - **CSS**: Styling and layout.
 - **Bootstrap**: For navbar and button styling.
 - **Google Fonts**: For typography.
+
+https://www.canva.com/design/DAGfgenQcaE/VciDZgdCmoe9sXWZmesbAw/edit?utm_content=DAGfgenQcaE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+Personal Design Inspiration
