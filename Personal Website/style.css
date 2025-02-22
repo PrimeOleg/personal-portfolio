@@ -1,0 +1,90 @@
+.gradient-background {
+  background: linear-gradient(300deg, #ff6f61, #ff9e6a, #ffcd79);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: black;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+}
+
+h2 {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+}
+
+section {
+  margin: 100px;
+}
+
+span {
+  color: #555555;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: (3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+section > .header {
+  padding-bottom: 38px;
+}
+
+.About > .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.About > .container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50px;
+}
+
+.about-2 {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .About > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-1,
+  .about-3 {
+    max-width: 300px;
+  }
+
+  .about-2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
