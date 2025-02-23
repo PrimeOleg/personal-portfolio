@@ -1,16 +1,18 @@
 body {
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
   background-color: #f8f9fa;
-  color: #333;
+  color: #2e4744; 
 }
+
 .gradient-background {
-  background: linear-gradient(135deg, #ff6f61, #ff9e6a, #ffcd79);
-  padding: 60px;
+  background: linear-gradient(135deg, #e2dd3f, #74cc66);
   color: white;
 }
+
 .highlight {
-  color: #222;
+  color: #046684; 
 }
+
 .skill-logo {
   width: 100px;
   height: 100px;
@@ -24,44 +26,42 @@ body {
   border-radius: 50%;
 }
 
+footer {
+  background-color: #d4b5a9;
+  padding: 20px;
+}
+
 footer a {
   text-decoration: none;
-  color: #555;
+  color: #2e4744;
 }
 
 footer a:hover {
-  color: #ff6f61;
+  color: #046684; 
 }
 
 .cursor {
   position: relative;
   margin: 0 auto;
-  border-right: 2px solid #333;
+  border-right: 2px solid #046684;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
+  transform: translateY(-50%);    
 }
 
 .typewriter-animation {
-  animation: typewriter 5s steps(50) 1s 1 normal both,
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
     blinkingCursor 500ms steps(50) infinite normal;
 }
 
 @keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
+  from { width: 0; }
+  to { width: 50%; }
 }
 
 @keyframes blinkingCursor {
-  from {
-    border-right-color: #ffcd79;
-  }
-  to {
-    border-right-color: transparent;
-  }
+  from { border-right-color: #046684; } 
+  to { border-right-color: transparent; }
 }
