@@ -1,92 +1,67 @@
+body {
+  font-family: "Domine", serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
 .gradient-background {
-  background: linear-gradient(300deg, #ff6f61, #ff9e6a, #ffcd79);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-  color: black;
+  background: linear-gradient(135deg, #ff6f61, #ff9e6a, #ffcd79);
+  padding: 60px;
+  color: white;
+}
+.highlight {
+  color: #222;
+}
+.skill-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.cat-gif {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 10px;
+  border-radius: 50%;
 }
 
-h1 {
-  font-family: "Domine", serif;
-  font-optical-sizing: auto;
+footer a {
+  text-decoration: none;
+  color: #555;
 }
 
-h2, h3, h4, h5 {
-  font-family: "Domine", serif;
-  font-optical-sizing: auto;
+footer a:hover {
+  color: #ff6f61;
 }
 
-section {
-  margin: 50px;
-}
-
-span {
-  color: #555555;
-}
-
-.center {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.My-skills > .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-section > .header {
-  padding-bottom: 20px;
-}
-
-body > section.My-Skills > .container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.container > div {
+.cursor {
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid #333;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
 }
 
-.About > .container img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 50px;
+.typewriter-animation {
+  animation: typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
 }
 
-body > section .About {
-  display: flex;
-}
-
-.about-2 {
-  flex: 1;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-2 {
-    text-align: center;
-    margin-top: 20px;
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
   }
 }
 
-section.contact-me {
-  margin-top: 150px;
+@keyframes blinkingCursor {
+  from {
+    border-right-color: #ffcd79;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
