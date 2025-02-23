@@ -1,147 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Reddit+Sans:wght@200;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
   </head>
+
   <body>
-    <div class="gradient-background">
-      <div class="container col-xxl-8 .bg-black">
-        <div class="row flex-lg-row-reverse align-items-center py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./assets/mohammad-rahmani-5tBqnBI7tKs-unsplash.jpg"
-              class="d-block mx-lg-auto img-fluid rounded-4"
-              alt="Laptop at night"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-1 lh-1 my-3">I AM <span>LUCA ELISEEV</span></h1>
-            <h2 class="display-6 lh-1">AN ASPIRING <u>WEB DEVELOPER</u></h2>
-          </div>
-        </div>
+    <nav class="navbar" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img
+            src="./assets/code-slash.svg"
+            alt="code-brackets"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Luca Eliseev
+        </a>
       </div>
-    </div>
-    <section class="My-Skills">
-      <h1 class="center">MY SKILLS</h1>
-      <div class="container">
-        <div class="html">
-          <img src="./assets/html.png" alt="html logo" />
-          <h2>HTML</h2>
-          <h3>
+    </nav>
+
+    <header class="text-center py-5 gradient-background">
+      <h1 class="display-3 fw-bold cursor typewriter-animation">
+        I AM <span class="highlight">LUCA ELISEEV</span>
+      </h1>
+      <h2 class="fs-3">AN ASPIRING <u>WEB DEVELOPER</u></h2>
+    </header>
+
+    <section class="container text-center my-5">
+      <h2 class="mb-4">MY SKILLS</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="./assets/html.png" alt="HTML Logo" class="skill-logo" />
+          <h3>HTML</h3>
+          <p>
             I enjoy building responsive websites and have a growing knowledge of
             HTML, CSS, and Python. I’m always refining my skills to create
             better user experiences.
-          </h3>
+          </p>
         </div>
-        <div class="css">
-          <img src="./assets/css.png" alt="css logo" />
-          <h2>CSS</h2>
-          <h3>
+        <div class="col-md-4">
+          <img src="./assets/css.png" alt="CSS Logo" class="skill-logo" />
+          <h3>CSS</h3>
+          <p>
             I’m currently diving deeper into web development while working on
             personal projects to boost my proficiency in full-stack development.
-          </h3>
+          </p>
         </div>
-        <div class="python">
-          <img src="./assets/python.png" alt="python logo" />
-          <h2>Python</h2>
-          <h3>
+        <div class="col-md-4">
+          <img src="./assets/python.png" alt="Python Logo" class="skill-logo" />
+          <h3>Python</h3>
+          <p>
             My journey in coding and design is driven by a passion for creating
             innovative and efficient solutions, and I’m eager to explore new
             technologies.
-          </h3>
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="About">
-      <h1 class="center header">ABOUT ME</h1>
-      <div class="container">
-        <div class="about-1">
-          <img
-            src="./assets/prateek-katyal-FNMztJegsSA-unsplash.jpg"
-            alt="boxing gloves"
-          />
-        </div>
-        <div class="about-2">
-          <h4>
-            Hi, I'm Luca. I'm passionate about technology and coding, always
-            looking for ways to improve and innovate. Currently, I'm studying
-            Digital Production, Design, and Development while also working
-            towards a future in machine learning and computer science.
-          </h4>
-        </div>
-        <div class="about-3">
-          <img src="./assets/markus-spiske-cvBBO4PzWPg-unsplash.jpg" />
-        </div>
-      </div>
+    <section class="container text-center my-5">
+      <h2 class="mb-4">ABOUT ME</h2>
+      <p class="lead">
+        Hi, I'm Luca. I'm passionate about technology and coding, always looking
+        for ways to improve. I'm currently studying Digital Production, Design,
+        and Development with plans to pursue computer science, focusing on
+        medical machine learning. I’m working on strengthening my web
+        development skills, especially in backend technologies like JavaScript,
+        Node.js, and MySQL, while also balancing freelance projects, fitness,
+        and MMA training.
+      </p>
+      <a
+        href="https://www.youtube.com/watch?v=-SjPVVeNdKY&ab_channel=MemerBeamer"
+        ><img
+          src="./assets/Coding The Matrix GIF.gif"
+          alt="code picture"
+          class="cat-gif"
+      /></a>
     </section>
 
-    <section class="contact-me">
-      <h1 class="center header">CONTACT ME</h1>
-      <div class="d-grid gap-2 col-5 mx-auto justify-content-center">
-        <button class="btn btn-dark" type="button">
-          <a href="mailto:luca.eliseev2@gmail.com"><h2>CONTACT</h2></a>
-        </button>
-      </div>
-    </section>
-
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <p class="col-md-4 mb-0 text-body-secondary">© Lucies Elissius</p>
-
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <section class="container text-center my-5">
+      <h2 class="fw-bold">CONTACT ME</h2>
+      <h3 class="py-5">
+        Always open to exciting work opportunities to further enhance my skills
+      </h3>
+      <div class="d-grid col-2 mx-auto button">
+        <a href="mailto:luca.eliseev2@gmail.com" class="btn btn-dark"
+          >CONTACT</a
         >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
+      </div>
+    </section>
 
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
-            <a
-              href="https://github.com/PrimeOleg"
-              class="nav-link px-2 text-body-secondary"
-              >Github</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="https://www.linkedin.com/in/luca-eliseev/"
-              class="nav-link px-2 text-body-secondary"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <footer
+      class="text-center py-4 border-top"
+      style="background-color: #e3f2fd"
+    >
+      <p>© Luca Eliseev</p>
+      <a href="https://github.com/PrimeOleg" class="mx-2">GitHub</a>
+      <a href="https://www.linkedin.com/in/luca-eliseev/" class="mx-2"
+        >LinkedIn</a
+      >
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
