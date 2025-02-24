@@ -1,7 +1,7 @@
 body {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   background-color: #f8f9fa;
-  color: #2e4744; 
+  color: #2e4744;
 }
 
 .gradient-background {
@@ -10,7 +10,7 @@ body {
 }
 
 .highlight {
-  color: #046684; 
+  color: #046684;
 }
 
 .skill-logo {
@@ -37,7 +37,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #046684; 
+  color: #046684;
 }
 
 .cursor {
@@ -47,21 +47,28 @@ footer a:hover {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);    
+  transform: translateY(-50%);
 }
 
 .typewriter-animation {
-  animation: 
-    typewriter 5s steps(50) 1s 1 normal both, 
+  animation: typewriter 5s steps(50) 1s 1 normal both,
     blinkingCursor 500ms steps(50) infinite normal;
 }
 
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 50%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blinkingCursor {
-  from { border-right-color: #046684; } 
-  to { border-right-color: transparent; }
+  from {
+    border-right-color: #046684;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
